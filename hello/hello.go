@@ -7,9 +7,12 @@ func main() {
 	fmt.Println(Hello("word!", helloPrefix))
 }
 
-const englishHelloPrefix = "Hello, "
-const spanishHelloPrefix = "Hola, "
-const frenchHelloPrefix = "Bonjour, "
+const (
+	englishHelloPrefix = "Hello, "
+	spanishHelloPrefix = "Hola, "
+	frenchHelloPrefix  = "Bonjour, "
+)
+
 const (
 	spanish = "Spanish"
 	french  = "French"
