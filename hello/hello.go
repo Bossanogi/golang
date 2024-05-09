@@ -20,6 +20,8 @@ func Hello(name string, language string) string {
 		helloPrefix = spanishHelloPrefix
 	case "English":
 		helloPrefix = englishHelloPrefix
+	default:
+		helloPrefix = englishHelloPrefix
 	}
 	return helloPrefix + name + "!"
 }
