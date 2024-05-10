@@ -1,10 +1,10 @@
 package iteration
 
-func Repeat(term string) string {
-	tmp := ""
+func Repeat(term string) (repeated string) {
+	repeated = ""
 	for i := 0; i < 5; i++ {
-		tmp += term
+		repeated += term
 	}
 
-	return tmp
+	return
 }
