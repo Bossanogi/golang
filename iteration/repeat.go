@@ -1,5 +1,10 @@
 package iteration
 
 func Repeat(term string) string {
-	return term
+	tmp := ""
+	for i := 0; i < 5; i++ {
+		tmp += term
+	}
+
+	return tmp
 }
