@@ -10,3 +10,11 @@ func Sum(numbers [length]int) (result int) {
 	}
 	return
 }
+
+func SumSlice(numbers []int) (result int) {
+	result = 0
+	for _, number := range numbers {
+		result += number
+	}
+	return
+}
