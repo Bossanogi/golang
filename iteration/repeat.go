@@ -1,5 +1,7 @@
 package iteration
 
+import "strings"
+
 // Repeat takes string - term and int. Return string - term times
 func Repeat(term string, times int) (repeated string) {
 	repeated = ""
@@ -11,6 +13,5 @@ func Repeat(term string, times int) (repeated string) {
 }
 
 func RepeatC(term string, times int) (repeated string) {
-
-	return
+	return strings.Repeat(term, times)
 }
