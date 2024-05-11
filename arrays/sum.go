@@ -25,3 +25,8 @@ func SumAll(numbersToSum ...[]int) (sums []int) {
 	}
 	return sums
 }
+
+func SumAllTail(numbersToSum ...[]int) (sums []int) {
+
+	return nil
+}
