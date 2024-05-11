@@ -25,12 +25,12 @@ func SumAll(numbersToSum ...[]int) (sums []int) {
 	for _, numbers := range numbersToSum {
 		sums = append(sums, SumSlice(numbers))
 	}
-	return sums
+	return
 }
 
 func SumAllTail(numbersToSum ...[]int) (sums []int) {
 	for _, numbers := range numbersToSum {
-		numbers = slices.Delete(numbers, 0, 0)
+		numbers := slices.Delete(numbers, 0, 1)
 		sums = append(sums, SumSlice(numbers))
 	}
 
