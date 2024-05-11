@@ -1,5 +1,7 @@
 package arrays
 
+import "slices"
+
 const length = 5
 
 // Sum takes array of int and return sum of it members
@@ -27,6 +29,10 @@ func SumAll(numbersToSum ...[]int) (sums []int) {
 }
 
 func SumAllTail(numbersToSum ...[]int) (sums []int) {
+	for _, numbers := range numbersToSum {
+		numbers = slices.Delete(numbers, 0, 0)
+		sums = append(sums, SumSlice(numbers))
+	}
 
-	return nil
+	return
 }
