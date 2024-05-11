@@ -18,3 +18,11 @@ func SumSlice(numbers []int) (result int) {
 	}
 	return
 }
+
+func SumAll(slice1 []int, slice2 []int) (sum []int) {
+	sum = nil
+	sum = append(sum, SumSlice(slice1))
+	sum = append(sum, SumSlice(slice2))
+
+	return
+}
