@@ -9,3 +9,8 @@ func Repeat(term string, times int) (repeated string) {
 
 	return
 }
+
+func RepeatC(term string, times int) (repeated string) {
+
+	return
+}
